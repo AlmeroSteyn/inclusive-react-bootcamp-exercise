@@ -6,26 +6,17 @@ const AppNavigation = () => (
     <nav>
       <ul className="nav nav-pills nav-stacked">
         <li>
-          <NavLink
-            to={{ pathname: '/tasks', state: { setFocus: true } }}
-            activeClassName="active"
-          >
+          <NavLink to="/tasks" activeClassName="active">
             Tasks
           </NavLink>
         </li>
         <li>
-          <NavLink
-            to={{ pathname: '/task', state: { setFocus: true } }}
-            activeClassName="active"
-          >
+          <NavLink to="/task" activeClassName="active">
             Add task
           </NavLink>
         </li>
         <li>
-          <NavLink
-            to={{ pathname: '/contact', state: { setFocus: true } }}
-            activeClassName="active"
-          >
+          <NavLink to="/contact" activeClassName="active">
             Contact
           </NavLink>
         </li>

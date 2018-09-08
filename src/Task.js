@@ -17,10 +17,7 @@ class Task extends Component {
 
     if (canSubmit) {
       addTask({ taskName, taskDescription }).then(() => {
-        this.props.history.replace({
-          pathname: '/tasks',
-          state: { setFocus: true }
-        });
+        this.props.history.replace('/tasks');
       });
     }
   };
@@ -53,9 +50,7 @@ class Task extends Component {
             className="form-control"
           />
           <div className="pull-right">
-            <Link to={{ pathname: '/tasks', state: { setFocus: true } }}>
-              Cancel and go back
-            </Link>
+            <Link to="/tasks">Cancel and go back</Link>
             <button className="btn btn-primary" type="submit">
               Add task
             </button>

@@ -29,10 +29,7 @@ class Tasks extends Component {
             </ul>
           </div>
           <div className="col-xs-12">
-            <Link
-              className="pull-right"
-              to={{ pathname: '/task', state: { setFocus: true } }}
-            >
+            <Link className="pull-right" to="/task">
               Add new task
             </Link>
           </div>
